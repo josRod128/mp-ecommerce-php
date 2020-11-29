@@ -11,6 +11,7 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <script src="https://www.mercadopago.com/v2/security.js" view="detail.php"></script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="./assets/merch-tools.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/fonts" media="">
+    <?php include_once("payConfig.php")?>
     <style>
         .as-filter-button-text {
             font-size: 26px;
@@ -130,7 +132,7 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <?php echo "<a href='$preference->init_point'><button type='button' class='mercadopago-button' formmethod='post'>Pagar la compra</button></a>";?>
                                 </div>
                             </div>
                         </div>
