@@ -1,6 +1,7 @@
 <?php
     require 'vendor/autoload.php';
-    $AccessToken = 'APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181';
+    // $AccessToken = 'APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181';
+    $AccessToken = 'TEST-2332376076440217-112517-db673aef6fdd004a6e16b4db044a1a5a-168864630';
     MercadoPago\SDK::initialize();
     MercadoPago\SDK::setAccessToken($AccessToken);
     MercadoPago\SDK::setPlatformId("PLATFORM_ID");
