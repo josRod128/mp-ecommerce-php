@@ -55,9 +55,9 @@
 
     # Building an back_urls
     $preference->back_urls = array(
-    "success" => "http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=success",
-    "failure" => "http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=failure",
-    "pending" => "http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=pending");
+    "success" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=success",
+    "failure" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=failure",
+    "pending" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=pending");
     $preference->auto_return = "approved";
 
     $preference->payment_methods = array(									
@@ -71,7 +71,7 @@
         );
 
     $preference->external_reference = "jose12836@gmail.com";
-    $preference->notification_url="http://localhost/mercadoPago/mp-ecommerce-php/webhook.php";
+    $preference->notification_url="https://josrod128-mp-commerce-php.herokuapp.com/webhook.php";
     $preference->save();
 
     // Crea un ítem en la preferencia
@@ -102,12 +102,12 @@
     //     $preference->items = array($item);
     //     $preference->payer = (object) array($payer);
     //     $preference->back_urls = array(
-    //         "success"=>"http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=success",
-    //         "failure"=>"http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=failure",
-    //         "pending"=>"http://localhost/mercadoPago/mp-ecommerce-php/resp.php?id=pending"
+    //         "success"=>"https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=success",
+    //         "failure"=>"https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=failure",
+    //         "pending"=>"https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=pending"
     //     );
     //     $preference->auto_return = "approved";
-    //     $preference->notification_url = "http://localhost/mercadoPago/mp-ecommerce-php/webhook.php";
+    //     $preference->notification_url = "https://josrod128-mp-commerce-php.herokuapp.com/webhook.php";
     //     $preference->payment_methods = array(
     //         "excluded_payment_methods" => array(
     //         array("id" => "master")
