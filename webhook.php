@@ -4,7 +4,7 @@
     MercadoPago\SDK::setAccessToken($AccessToken);
     $body = @file_get_contents('php://input');
     $data = json_decode($body);
-    file_put_contents('vendor/'.$data->id.".json", $body);
+    file_put_contents('notification/'.$data->id.".json", $body);
     switch($data->type) {
     case "payment":
     $payment = MercadoPago\Payment::find_by_id($data->data->id);
