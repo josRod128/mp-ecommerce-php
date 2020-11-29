@@ -12,7 +12,9 @@ switch($data['id']){
 	case "success":
 		echo "<h2>Aprobado";
 		echo "</p>		".$data['id'];
-		echo "</p>preference_id:".$data['preference_id'];
+		echo "</p>collection_id:".$data['collection_id']."</h2>";
 		echo "</p>external_reference:".$data['external_reference']."</h2>";
+		echo "</p>preference_id:".$data['preference_id'];
+		echo "</p>payment_id:".$data['payment_id'];
 		break;
 }
