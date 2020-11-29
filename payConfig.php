@@ -39,9 +39,9 @@
 
     # Building an back_urls
     $preference->back_urls = array(
-    "success" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=success",
-    "failure" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=failure",
-    "pending" => "https://josrod128-mp-commerce-php.herokuapp.com/resp.php?id=pending");
+    "success" => "https://josrod128-mp-commerce-php.000webhostapp.com/mp-ecommerce-php/resp.php?id=success",
+    "failure" => "https://josrod128-mp-commerce-php.000webhostapp.com/mp-ecommerce-php/resp.php?id=failure",
+    "pending" => "https://josrod128-mp-commerce-php.000webhostapp.com/mp-ecommerce-php/resp.php?id=pending");
     $preference->auto_return = "approved";
 
     $preference->payment_methods = array(									
@@ -55,6 +55,6 @@
         );
 
     $preference->external_reference = "jose12836@gmail.com";
-    $preference->notification_url="https://josrod128-mp-commerce-php.herokuapp.com/webhook.php";
+    $preference->notification_url="https://josrod128-mp-commerce-php.000webhostapp.com/mp-ecommerce-php/webhook.php";
     $preference->save();
 ?>
